@@ -1,4 +1,10 @@
 extends layout
-
 block body
-	p= message || 'Yoo!'
+    .wrapper
+        h1 #{headText || "Hmm."}
+        p #{text || "It seems that you're lost in a perpetual black hole. Let us help guide you out and get you back home."}
+            .buttons
+            a(href=redirectUrl || "https://example.com") #{buttonText || "Go"}
+        .space
+            .blackhole
+            .ship
